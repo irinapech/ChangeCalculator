@@ -21,7 +21,7 @@ form {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    /* border: 5px solid salmon; */
+    border: 5px solid salmon;
 }
 
 input[type=text] {
@@ -36,27 +36,28 @@ input[type=text] {
 button[type=submit] {
     padding: 10px 5px;
     margin: 5px 0;
-    text-decoration: none;
     cursor: pointer;
     border-radius: 10px;
     box-sizing: border-box;
-    border: 2px solid black;
-    border-style: ridge;
     background-color: black;
     color: white;
+    letter-spacing: 5px;
+    font-size: larger;
+    font-family: "Courier New", monospace;
 }
 
 .left {
     display: flex;
     flex-direction: column;
     column-gap: 20px;
-    width: 200px;
+    width: 40%;
     padding: 30px;
 }
 
 .right {
-    /* border: 5px solid skyblue; */
+    border: 5px solid skyblue;
     padding: 30px;
+    width: 60%;
 }
 
 span {
@@ -152,3 +153,23 @@ tfoot td {
   table {
     background-color: #618264;
   } */
+
+/* Responsive layout */
+
+/* Tablet Styles */
+@media only screen and (max-width: 1000px) {
+    form {
+        flex-direction: column;
+    }
+    .form-container
+    {
+        transform: translate(-50%, -35%);
+    }
+}
+
+/* Mobile Styles */
+/* @media only screen and (max-width: 500px) {
+    form {
+        flex-direction: column;
+    }
+} */

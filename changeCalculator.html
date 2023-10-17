@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Change calculator</title>
+    <script src="main.js" defer></script>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Rock+Salt" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <div class="form-container">
+        <form name="form1">
+            <div class="left">
+                <label for="total">Total:<span>*</span></label>
+                <input id="total" name="total" type="text" />
+
+                <label for="money">Money:<span>*</span></label>
+                <input id="money" name="money" type="text" />
+
+                <button type="submit">Submit</button>
+            </div>
+            <div class="right">
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Denomination</th>
+                            <th>Amount</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>$20 Bills</td>
+                            <td id="twenties">0</td>
+                        </tr>
+                        <tr>
+                            <td>$10 Bills</td>
+                            <td id="tens">0</td>
+                        </tr>
+                        <tr>
+                            <td>$5 Bills</td>
+                            <td id="fives">0</td>
+                        </tr>
+                        <tr>
+                            <td>$1 Bills</td>
+                            <td id="ones">0</td>
+                        </tr>
+                        <tr>
+                            <td>Quarters</td>
+                            <td id="quarters">0</td>
+                        </tr>
+                        <tr>
+                            <td>Dimes</td>
+                            <td id="dimes">0</td>
+                        </tr>
+                        <tr>
+                            <td>Nickels</td>
+                            <td id="nickels">0</td>
+                        </tr>
+                        <tr>
+                            <td>Pennies</td>
+                            <td id="pennies">0</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <th scope="row" colspan="1">Change</th>
+                            <td id="change" colspan="1">0 $</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </form>
+
+    </div>
+</body>
+
+</html>

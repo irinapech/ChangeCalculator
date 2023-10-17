@@ -1,0 +1,154 @@
+html {
+    /* font-family: "Courier New", monospace; */
+    font-family: "helvetica neue", helvetica, arial, sans-serif;
+}
+
+label span {
+    color: coral;
+}
+
+label {
+    font-family: "Rock Salt", cursive;
+}
+
+form {
+    display: flex;
+    align-items: center;
+}
+
+.form-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* border: 5px solid salmon; */
+}
+
+input[type=text] {
+    padding: 10px 5px;
+    margin: 5px 0;
+    box-sizing: border-box;
+    border: 2px solid black;
+    /* change this */
+    border-radius: 10px;
+}
+
+button[type=submit] {
+    padding: 10px 5px;
+    margin: 5px 0;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 10px;
+    box-sizing: border-box;
+    border: 2px solid black;
+    border-style: ridge;
+    background-color: black;
+    color: white;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    column-gap: 20px;
+    width: 200px;
+    padding: 30px;
+}
+
+.right {
+    /* border: 5px solid skyblue; */
+    padding: 30px;
+}
+
+span {
+    color: red;
+    font-size: 0.8em;
+    /* display: none; */
+}
+
+/* spacing */
+
+table {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead th:nth-child(1) {
+    width: 30%;
+}
+
+thead th:nth-child(2) {
+    width: 20%;
+}
+
+thead th:nth-child(3) {
+    width: 15%;
+}
+
+thead th:nth-child(4) {
+    width: 35%;
+}
+
+th,
+td {
+    padding: 5px;
+}
+
+/* typography */
+
+thead th,
+tfoot th {
+    font-family: "Rock Salt", cursive;
+}
+
+th {
+    letter-spacing: 2px;
+}
+
+td {
+    letter-spacing: 1px;
+}
+
+tbody td {
+    text-align: center;
+}
+
+tfoot th {
+    text-align: right;
+}
+
+/* graphics and colors */
+
+/* thead,
+tfoot {
+    background: url(leopardskin.jpg);
+    color: white;
+    text-shadow: 1px 1px 1px black;
+} */
+
+/* thead th,
+tfoot th,
+tfoot td {
+    background: linear-gradient(to bottom,
+            rgba(0, 0, 0, 0.1),
+            rgba(0, 0, 0, 0.5));
+    border: 3px solid purple;
+} */
+
+/* zebra striping */
+
+/* tbody tr:nth-child(odd) {
+    background-color: #618264;
+  }
+  
+  tbody tr:nth-child(even) {
+    background-color: #79AC78;
+  }
+  
+  tbody tr {
+    background-image: url(noise.png);
+  }
+  
+  table {
+    background-color: #618264;
+  } */

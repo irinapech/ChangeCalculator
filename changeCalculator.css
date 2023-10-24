@@ -2,6 +2,9 @@ html {
     /* font-family: "Courier New", monospace; */
     font-family: "helvetica neue", helvetica, arial, sans-serif;
     font: 1em/1.5 sans-serif;
+    background: var(--color-background);
+    color: var(--font-color);
+
 }
 
 label span {
@@ -22,29 +25,28 @@ form {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    /* border: 5px solid salmon; */
 }
 
 input[type=text] {
     padding: 10px 5px;
     margin: 5px 0;
     box-sizing: border-box;
-    border: 2px solid black;
-    /* change this */
+    border: 2px solid var(--color-border);
+    border-color: var(--color-border);
     border-radius: 10px;
 }
 
-button[type=submit] {
+button {
     padding: 10px 5px;
     margin: 5px 0;
     cursor: pointer;
     border-radius: 10px;
     box-sizing: border-box;
-    background-color: black;
-    color: white;
     letter-spacing: 5px;
     font-size: larger;
     font-family: "Courier New", monospace;
+    color: var(--color-button-text);
+    background: var(--color-button);
 }
 
 .left {
@@ -56,7 +58,6 @@ button[type=submit] {
 }
 
 .right {
-    /* border: 5px solid skyblue; */
     padding: 30px;
     width: 60%;
 }
@@ -135,30 +136,17 @@ tfoot th {
 /* toggle switch */
 
 .theme-light {
-    --color-primary: #0060df;
-    --color-secondary: #fbfbfe;
-    --color-accent: #fd6f53;
-    --font-color: #000000;
+    --color-background: black;
+    --color-button: white;
+    --color-button-text: black;
+    --color-border: white;
+    --font-color: white;
 }
 
 .theme-dark {
-    --color-primary: #17ed90;
-    --color-secondary: #243133;
-    --color-accent: #12cdea;
-    --font-color: #ffffff;
-}
-
-.form-container {
-    background: var(--color-secondary);
-}
-
-.form-container h1 {
-    color: var(--font-color);
-}
-
-.form-container button {
-    color: var(--font-color);
-    background: var(--color-primary);
-    padding: 10px 20px;
-    border-radius: 5px;
+    --color-background: white;
+    --color-button: black;
+    --color-button-text: white;
+    --color-border: black;
+    --font-color: black;
 }

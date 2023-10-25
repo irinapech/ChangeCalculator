@@ -1,0 +1,8 @@
+- move the toggle to the top right corner
+- set icon instead of the button on the toggle switch
+- add animation (aka smoother transition from one theme to another)
+- make the repo public on github
+- add a png/gif to readme
+- finish reading this article https://www.smashingmagazine.com/2020/08/application-color-schemes-css-custom-properties/
+- take some insights from it and put them on the server
+- is there a way to make to do list/prospective fixes directly on github?

@@ -1,10 +1,8 @@
 html {
-    /* font-family: "Courier New", monospace; */
     font-family: "helvetica neue", helvetica, arial, sans-serif;
     font: 1em/1.5 sans-serif;
     background: var(--color-background);
     color: var(--font-color);
-
 }
 
 label span {
@@ -136,17 +134,17 @@ tfoot th {
 /* toggle switch */
 
 .theme-light {
-    --color-background: black;
-    --color-button: white;
-    --color-button-text: black;
-    --color-border: white;
-    --font-color: white;
+    --color-background: #181c24;
+    --color-button: #f0f0f5;
+    --color-button-text: #181c24;
+    --color-border: #f0f0f5;
+    --font-color: #f0f0f5;
 }
 
 .theme-dark {
-    --color-background: white;
-    --color-button: black;
-    --color-button-text: white;
-    --color-border: black;
-    --font-color: black;
+    --color-background: #f0f0f5;
+    --color-button: #181c24;
+    --color-button-text: #f0f0f5;
+    --color-border: #181c24;
+    --font-color: #181c24;
 }

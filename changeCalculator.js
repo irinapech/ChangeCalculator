@@ -107,15 +107,38 @@ function setTheme(themeName) {
     document.documentElement.className = themeName;
 }
 
+function setIcon(iconName) {
+    let x = document.getElementById(iconName);
+    // disappears after a few clicks
+    // if (x.style.display === "none")
+    // {
+    //     x.style.display = "block";
+    // }
+    // else 
+    // {
+    //     x.style.display = "none";
+    // }
+    if (window.getComputedStyle(x).display === "none")
+    {
+        x.style.display == "block";
+    }
+    else
+    {
+        x.style.display == "none";
+    }
+}
+
 // toggle between light and dark theme
 function toggleTheme() {
     if (localStorage.getItem('theme') === 'theme-dark')
     {
         setTheme('theme-light');
+        // setIcon('dark-switch');
     }
     else
     {
         setTheme('theme-dark');
+        // setIcon('light-switch');
     }
 }
 

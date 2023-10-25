@@ -47,10 +47,18 @@ button {
     background: var(--color-button);
 }
 
-#switch {
+#light-switch {
     position: fixed;
-    top: 0.5em;
-    right: 0.5em;
+    top: 1.5em;
+    right: 1.5em;
+    display: var(--visibility-sun);
+}
+
+#dark-switch {
+    position: fixed;
+    top: 1.5em;
+    right: 1.5em;
+    display: var(--visibility-moon);
 }
 
 .left {
@@ -145,6 +153,8 @@ tfoot th {
     --color-button-text: #181c24;
     --color-border: #f0f0f5;
     --font-color: #f0f0f5;
+    --visibility-moon: block;
+    --visibility-moon: none;
 }
 
 .theme-dark {
@@ -153,4 +163,6 @@ tfoot th {
     --color-button-text: #f0f0f5;
     --color-border: #181c24;
     --font-color: #181c24;
+    --visibility-sun: block;
+    --visibility-sun: none;
 }

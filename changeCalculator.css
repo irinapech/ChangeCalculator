@@ -47,6 +47,12 @@ button {
     background: var(--color-button);
 }
 
+#switch {
+    position: fixed;
+    top: 0.5em;
+    right: 0.5em;
+}
+
 .left {
     display: flex;
     flex-direction: column;
